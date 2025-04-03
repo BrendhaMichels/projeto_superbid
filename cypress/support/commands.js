@@ -1,25 +1,18 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (username, password) => {
+    cy.visit('/');
+
+    cy.get('#onetrust-accept-btn-handler', { timeout: 10000 }).should('be.visible').click();
+    cy.get('.gcap-close', { timeout: 10000 }).should('be.visible').click();
+
+    cy.get('.jss107 > .MuiTypography-root', { timeout: 10000 }).should('be.visible').click();
+
+    // Como o login ocorre em um domínio diferente, encapsulamos no cy.origin()
+    cy.origin('https://accounts.superbid.net', () => {
+        cy.get('input[name="login"]').should('be.visible').type(Cypress.env('username'));
+        cy.get('input[name="password"]').should('be.visible').type(Cypress.env('password'));
+        cy.get('.btn-login').should('be.visible').click();
+    });
+
+    // Aguarda o redirecionamento de volta para garantir que o login foi bem-sucedido
+    cy.url().should('include', 'superbid.net');
+});

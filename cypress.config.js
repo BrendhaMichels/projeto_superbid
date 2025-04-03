@@ -2,7 +2,7 @@ const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://accounts.superbid.net/signin', 
+    baseUrl: 'https://superbid.net', 
     setupNodeEvents(on, config) {
       
     },
