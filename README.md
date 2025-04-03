@@ -1,16 +1,16 @@
 📂 Estrutura do Projeto
 
-├── cypress
-│   ├── e2e│     
-│   │   ├── consultar_evento.cy.js  # Testes de busca e filtros
-│   ├── pages
-│   │   ├── LoginPage.js  # Page Object do login
-│   │   ├── ConsultarEventoPage.js  # Page Object da busca de produtos
-│   ├── screenshots  # Pasta onde ficam os screenshots dos testes
-│   ├── reports  # Pasta onde ficam os relatórios gerados
-├── cypress.config.js  # Configuração do Cypress
-├── package.json  # Dependências do projeto
-├── README.md  # Documentação do projeto
+cypress
+/e2e    
+consultar_evento.cy.js  # Testes de busca e filtros
+/pages
+LoginPage.js  # Page Object do login
+ConsultarEventoPage.js  # Page Object da busca de produtos
+/ screenshots  # Pasta onde ficam os screenshots dos testes
+/ reports  # Pasta onde ficam os relatórios gerados
+cypress.config.js  # Configuração do Cypress
+package.json  # Dependências do projeto
+README.md  # Documentação do projeto
 
 Como Configurar o Projeto
 
