@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-04-03T01:54:30.707Z",
-    "end": "2025-04-03T01:55:10.213Z",
-    "duration": 39506,
+    "start": "2025-04-03T02:12:00.872Z",
+    "end": "2025-04-03T02:12:39.481Z",
+    "duration": 38609,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4a176b04-fd14-46ec-8141-f055c458844f",
+      "uuid": "8647ef11-5920-409b-8b9a-511b4c04cb71",
       "title": "",
       "fullFile": "cypress\\e2e\\consultar_evento.cy.js",
       "file": "cypress\\e2e\\consultar_evento.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0ac3903d-84fe-4bd3-a36a-ec549a5ea132",
+          "uuid": "5b2836c5-f682-4613-9534-0595fb2d5883",
           "title": "Buscar por Produto",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Buscar produto com o termo \"Carros\"",
               "fullTitle": "Buscar por Produto Buscar produto com o termo \"Carros\"",
               "timedOut": null,
-              "duration": 37582,
+              "duration": 36731,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.wait(1000);\n_ConsultarEventoPage.default.buscarProduto('Carros');\n_ConsultarEventoPage.default.aplicarFiltro('filtro', 'leilao');\n_ConsultarEventoPage.default.aplicarFiltro('filtro', 'carros');\n_ConsultarEventoPage.default.verificarURLContem('filter=auction.modalityDesc:leilao');\n_ConsultarEventoPage.default.verificarURLContem('product.subCategory.category.description:carros');",
               "err": {},
-              "uuid": "318620c7-a041-4e33-8bb2-1bcbb8479a08",
-              "parentUUID": "0ac3903d-84fe-4bd3-a36a-ec549a5ea132",
+              "uuid": "7973a9ca-4c30-44f1-8891-4a6d92a7d23d",
+              "parentUUID": "5b2836c5-f682-4613-9534-0595fb2d5883",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "318620c7-a041-4e33-8bb2-1bcbb8479a08"
+            "7973a9ca-4c30-44f1-8891-4a6d92a7d23d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 37582,
+          "duration": 36731,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

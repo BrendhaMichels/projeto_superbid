@@ -1,7 +1,7 @@
 📂 Estrutura do Projeto
 
 ├── cypress
-│   ├── e2e│   │   
+│   ├── e2e│     
 │   │   ├── consultar_evento.cy.js  # Testes de busca e filtros
 │   ├── pages
 │   │   ├── LoginPage.js  # Page Object do login
@@ -31,20 +31,19 @@ Rodar Testes no Modo Interativo (GUI)
 npx cypress open
 
 Rodar Testes no Modo Headless (Terminal)
+npx cypress run --reporter mochawesome
+
+Rodar Testes e Gerar Relatório (Terminal)
 npx cypress run
 
 📸 Evidências e Relatórios
 
 📂 Screenshots
-
 Durante a execução dos testes, capturas de tela são salvas na pasta:
-
 cypress/screenshots
 
 📂 Relatórios
-
 Os relatórios dos testes podem ser encontrados na pasta:
-
 cypress/reports
 
 🛠 Tecnologias Utilizadas
