@@ -1,7 +1,7 @@
 {
   "name": "projeto_superbid",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto de testes automatizados com Cypress",  
   "main": "index.js",
   "scripts": {    
   "test": "cypress run --reporter mochawesome",
@@ -9,7 +9,7 @@
   "generate-report": "npx mochawesome-report-generator cypress/reports/report.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brendha Michels Ramos",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^14.2.1",
